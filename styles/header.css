@@ -1,0 +1,88 @@
+.header__navigation {
+    width: 100%;
+    height: 75px;
+    margin-bottom: 93px;
+
+}
+
+.header__navigation-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 17px 27px 0 27px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-image {
+    width: 85px;
+    height: 65px;
+}
+
+.header__logo-title {
+    font-size: 25px;
+    margin-left: 20px;
+    font-weight: 400;
+    color: #000000;
+    font-family: 'Advent Pro', Arial, sans-serif;
+}
+
+.header__search-box {
+    display: flex;
+    align-items: center;
+    background-color: #E7E7E7;
+    border: none;
+    border-radius: 5px;
+}
+
+.header__search-icon {
+    padding: 12px 11px 12px 12px;
+}
+
+.header__search-icon svg {
+    color: #303030;
+}
+
+.header__search-input,
+.header__cart-link,
+.header__login-button {
+    font-family: 'Source Serif 4', Arial, sans-serif;
+}
+
+.header__search-input {
+    background-color: #E7E7E7;
+    color: rgba(48, 48, 48, 0.4);
+    width: 450px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+}
+
+.header__cart-link {
+    text-align: center;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.header__login-button {
+    background-color: #CE5610;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    width: 114px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+}

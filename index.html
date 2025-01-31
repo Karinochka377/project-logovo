@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="styles/global-styles.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <title>Логово Страничек</title>
+</head>
+<body>
+<header class="header">
+    <nav class="header__navigation">
+        <div class="header__navigation-container">
+            <div class="header__logo">
+                <img src="images/icon/logo.svg" alt="Логотип" class="header__logo-image">
+                <a href="#" class="header__logo-link">
+                    <h1 class="header__logo-title">Логово Страничек</h1>
+                </a>
+            </div>
+            <div class="header__search-box">
+                <span class="header__search-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M7.10869 12.2276C4.28168 12.2276 1.98999 9.93595 1.98999 7.10894C1.98999 4.28193 4.28168 1.99023 7.10869 1.99023C9.9357 1.99023 12.2274 4.28193 12.2274 7.10894C12.2274 8.31409 11.8109 9.42244 11.1139 10.2968C11.1432 10.3122 11.1715 10.3304 11.1985 10.3508C11.2196 10.3667 11.2398 10.3845 11.2591 10.404L14.8128 13.9577C15.0491 14.194 15.0491 14.577 14.8128 14.8133C14.5766 15.0492 14.1935 15.0492 13.9573 14.8133L10.4037 11.2597C10.3597 11.2156 10.3238 11.1665 10.2962 11.1143C9.42163 11.8114 8.31384 12.2276 7.10869 12.2276ZM11.2967 7.10894C11.2967 9.42199 9.42163 11.297 7.10869 11.297C4.79576 11.297 2.92066 9.42199 2.92066 7.10894C2.92066 4.79589 4.79576 2.92091 7.10869 2.92091C9.42163 2.92091 11.2967 4.79589 11.2967 7.10894Z"
+                              fill="#303030"/>
+                    </svg>
+                </span>
+                <label class="header__search-label">
+                    <input type="text" placeholder="Поиск" class="header__search-input">
+                </label>
+            </div>
+            <div class="header__actions">
+                <a href="#" class="header__cart-link">
+                    <svg width="29" height="28" viewBox="0 0 30 30" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_0_779)">
+                            <path d="M14.2666 25.1242C14.2666 23.5687 13.0288 22.3079 11.502 22.3079C9.97488 22.3079 8.73699 23.5688 8.73699 25.1239C8.73699 26.6793 9.97488 27.9403 11.502 27.9403C13.028 27.9386 14.265 26.6788 14.2666 25.1241V25.1242ZM9.71773 25.1242C9.71773 24.1203 10.5163 23.3068 11.502 23.3068C12.4873 23.3068 13.286 24.1203 13.286 25.1239C13.286 26.1278 12.4873 26.9414 11.502 26.9414C10.5169 26.9403 9.71878 26.1273 9.71766 25.1241L9.71773 25.1242ZM21.7399 27.9403C23.267 27.9405 24.5049 26.6797 24.5049 25.1241C24.5052 23.5687 23.2673 22.3079 21.7401 22.3079C20.2129 22.3079 18.9753 23.5687 18.9753 25.1242C18.9772 26.6785 20.2137 27.9383 21.74 27.9403H21.7399ZM21.7399 23.3068C22.7252 23.3068 23.5243 24.1203 23.5243 25.1239C23.5245 26.1275 22.7255 26.9414 21.7401 26.9414C20.7548 26.9414 19.9559 26.1278 19.9559 25.1241C19.957 24.1211 20.7551 23.3082 21.7399 23.3068ZM0.57367 0.998904H3.56472C4.54889 0.99498 5.38807 1.72495 5.53804 2.71598L7.90566 17.9498C8.12925 19.4269 9.38031 20.5152 10.8477 20.5094H25.4828C25.6114 20.5072 25.734 20.4536 25.8242 20.3602C25.9144 20.2667 25.9649 20.141 25.9649 20.01C25.9649 19.8789 25.9144 19.7532 25.8242 19.6597C25.734 19.5663 25.6114 19.5127 25.4828 19.5105H10.8477C9.8635 19.5144 9.02433 18.7842 8.87435 17.7934L8.47186 15.2034H23.4607C24.7299 15.2028 25.8594 14.384 26.2752 13.163L29.0562 4.988C29.0819 4.91274 29.0895 4.83229 29.0785 4.7534C29.0674 4.6745 29.038 4.59945 28.9926 4.53451C28.9473 4.46957 28.8873 4.41663 28.8178 4.38013C28.7482 4.34362 28.6711 4.32461 28.5929 4.32468H6.78083L6.50673 2.55965C6.28314 1.08252 5.03222 -0.00582711 3.56472 2.34754e-05H0.57367C0.44506 0.00223782 0.322453 0.055831 0.232271 0.149253C0.142089 0.242675 0.0915527 0.368447 0.0915527 0.499464C0.0915527 0.63048 0.142089 0.756252 0.232271 0.849674C0.322453 0.943096 0.44506 0.99669 0.57367 0.998904ZM27.9039 5.32384L25.3488 12.8358C25.2126 13.2354 24.9577 13.582 24.6193 13.8272C24.281 14.0725 23.876 14.2044 23.4607 14.2045H8.31642L6.93599 5.32356L27.9039 5.32384Z"
+                                  fill="black"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_0_779">
+                                <rect width="29" height="30" fill="white" transform="translate(0.083252)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <p class="header__cart-text">Корзина</p>
+                </a>
+                <button class="header__login-button">Войти</button>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="main">
+    <section class="intro">
+        <div class="intro__container">
+            <div class="intro__content">
+                <h2 class="intro__title">Логово Страничек — маркетплейс <br> книжных товаров</h2>
+                <button class="intro__button">Войти</button>
+            </div>
+            <div class="intro__image">
+                <img class="intro__image-content"
+                    src="images/marketplace-intro-image.jpg"
+                     alt="Иллюстрация для маркетплейса книжных товаров: люди читают книги и обсуждают их.">
+            </div>
+        </div>
+    </section>
+    <section class="popular">
+        <div class="popular__header">
+            <h3 class="popular__title">Популярное</h3>
+            <a href="#" class="popular__view-all">
+                <p class="popular__view-text">Смотреть всё</p>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.25" y="0.25" width="20" height="20" rx="1.75" stroke="#AB470E" stroke-width="0.5"/>
+                    <path d="M13.3334 12.5L15.8334 10L13.3334 7.5L12.7442 8.08917L14.2384 9.58333H4.16675V10.4167H14.2384L12.7442 11.9108L13.3334 12.5Z"
+                          fill="#AB470E"/>
+                </svg>
+            </a>
+        </div>
+        <div class="popular__list">
+            <!--book1-->
+            <article class="book">
+                <div class="book__details">
+                    <img src="images/book-1.jpg" alt="Книга жало белого города" class="book__image">
+                    <div class="book__content">
+                        <h4 class="book__title">Жало белого города</h4>
+                        <a href="#" class="book__author">Эва Гарсиа Саэнс де Уртури</a>
+                        <div class="book__rating-container">
+                            <svg class="book__rating-icon" viewBox="0 0 14 13" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z"
+                                      fill="#FFF500"/>
+                            </svg>
+                            <p class="book__rating">4.9</p>
+                        </div>
+                        <div class="book__controls">
+                            <button class="book__add-to-cart">В корзину</button>
+                            <b class="book__price">355₽</b>
+                        </div>
+                    </div>
+                    <div class="book__info">
+                        <svg class="book__icon" viewBox="0 0 12 17" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.58325 1.1665H10.4166C10.6927 1.1665 10.9166 1.39036 10.9166 1.6665V14.895C10.9166 15.3422 10.3745 15.5645 10.0606 15.2461L7.23057 12.3765C6.65731 11.7953 5.72446 11.7792 5.13151 12.3403L1.92694 15.3731C1.6082 15.6748 1.08325 15.4488 1.08325 15.01V1.6665C1.08325 1.39036 1.30711 1.1665 1.58325 1.1665Z"
+                                  stroke="#110C1F"/>
+                        </svg>
+                        <p class="book__description">Неуловимый маньяк убивает жителей Витории, украшая их тела
+                            эгускилорами баскскими ритуальными символами. <br> В точности как 20 лет назад...
+                            <a href="#" class="book__more-link">Далее</a>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <!--book2-->
+            <article class="book">
+                <div class="book__details">
+                    <img src="images/book-2.jpg" alt="Книга жало белого города" class="book__image">
+                    <div class="book__content">
+                        <h4 class="book__title">Цветы для Элджернона</h4>
+                        <a href="#" class="book__author">Киз Даниэл</a>
+                        <div class="book__rating-container">
+                            <svg class="book__rating-icon" viewBox="0 0 14 13" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z"
+                                      fill="#FFF500"/>
+                            </svg>
+                            <p class="book__rating">4.9</p>
+                        </div>
+                        <div class="book__controls">
+                            <button class="book__add-to-cart">В корзину</button>
+                            <b class="book__price">399₽</b>
+                        </div>
+                    </div>
+                    <div class="book__info">
+                        <svg class="book__icon" viewBox="0 0 12 17" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.58325 1.1665H10.4166C10.6927 1.1665 10.9166 1.39036 10.9166 1.6665V14.895C10.9166 15.3422 10.3745 15.5645 10.0606 15.2461L7.23057 12.3765C6.65731 11.7953 5.72446 11.7792 5.13151 12.3403L1.92694 15.3731C1.6082 15.6748 1.08325 15.4488 1.08325 15.01V1.6665C1.08325 1.39036 1.30711 1.1665 1.58325 1.1665Z"
+                                  stroke="#110C1F"/>
+                        </svg>
+                        <p class="book__description">Когда-то это считалось фантастикой.
+                            Сейчас это воспринимается как одно из самых человечных произведений новейшего времени...
+                            <a class="book__more-link" href="#">Далее</a>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <!--book3-->
+            <article class="book">
+                <div class="book__details">
+                    <img src="images/book-3.jpg" alt="Книга жало белого города" class="book__image">
+                    <div class="book__content">
+                        <h4 class="book__title">Каштановый человечек</h4>
+                        <a href="#" class="book__author">Сорен Свейструп</a>
+                        <div class="book__rating-container">
+                            <svg class="book__rating-icon" viewBox="0 0 14 13" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z"
+                                      fill="#FFF500"/>
+                            </svg>
+                            <p class="book__rating">4.9</p>
+                        </div>
+                        <div class="book__controls">
+                            <button class="book__add-to-cart">В корзину</button>
+                            <b class="book__price">575₽</b>
+                        </div>
+                    </div>
+                    <svg class="book__icon" viewBox="0 0 12 17" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.58325 1.1665H10.4166C10.6927 1.1665 10.9166 1.39036 10.9166 1.6665V14.895C10.9166 15.3422 10.3745 15.5645 10.0606 15.2461L7.23057 12.3765C6.65731 11.7953 5.72446 11.7792 5.13151 12.3403L1.92694 15.3731C1.6082 15.6748 1.08325 15.4488 1.08325 15.01V1.6665C1.08325 1.39036 1.30711 1.1665 1.58325 1.1665Z"
+                              stroke="#110C1F"/>
+                    </svg>
+                    <div class="book__info">
+                        <p class="book__description">Копенгаген. Найдено тело жестоко убитой девушки. Над ним висит
+                            каштановый человечек - куколка, сделанная из каштанов и спичек, с прорезанными глазками и
+                            улыбающимся ротиком...
+                            <a href="#" class="book__more-link">Далее</a>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <!--book4-->
+            <article class="book">
+                <div class="book__details">
+                    <img src="images/book-4.jpg" alt="Книга жало белого города" class="book__image">
+                    <div class="book__content">
+                        <h4 class="book__title">Лягушка, слон и брокколи</h4>
+                        <a href="#" class="book__author">Алексей Марков</a>
+                        <div class="book__rating-container">
+                            <svg class="book__rating-icon" viewBox="0 0 14 13" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z"
+                                      fill="#FFF500"/>
+                            </svg>
+                            <p class="book__rating">4.9</p>
+                        </div>
+                        <div class="book__controls">
+                            <button class="book__add-to-cart">В корзину</button>
+                            <b class="book__price">575₽</b>
+                        </div>
+                    </div>
+                    <div class="book__info">
+                        <svg class="book__icon" viewBox="0 0 12 17" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.58325 1.1665H10.4166C10.6927 1.1665 10.9166 1.39036 10.9166 1.6665V14.895C10.9166 15.3422 10.3745 15.5645 10.0606 15.2461L7.23057 12.3765C6.65731 11.7953 5.72446 11.7792 5.13151 12.3403L1.92694 15.3731C1.6082 15.6748 1.08325 15.4488 1.08325 15.01V1.6665C1.08325 1.39036 1.30711 1.1665 1.58325 1.1665Z"
+                                  stroke="#110C1F"/>
+                        </svg>
+                        <p class="book__description">Слона надо есть медленно и по кусочкам, лягушку – глотать первым
+                            делом, с утра...
+                            <a href="#" class="book__more-link">Далее</a>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <!-- Больше книг -->
+        </div>
+    </section>
+    <div class="best-sellers__container">
+        <section class="best-sellers">
+            <h5 class="best-sellers__title">Хиты продаж</h5>
+            <div class="best-sellers__list">
+                <article class="best-sellers__book">
+                    <div class="best-sellers__details">
+                        <img src="images/book-1.jpg" alt="Книга жало белого города" class="best-sellers__image">
+                        <div class="best-sellers__content">
+                            <h4 class="best-sellers-book__title">Жало белого города</h4>
+                            <a href="#" class="best-sellers__author">Эва Гарсиа Саэнс де Уртури</a>
+                            <div class="best-sellers__rating-container">
+                                <svg class="best-sellers__rating-icon" viewBox="0 0 14 13" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z"
+                                          fill="#FFF500"/>
+                                </svg>
+                                <p class="best-sellers__rating">4.9</p>
+                            </div>
+                            <div class="best-sellers__controls">
+                                <button class="best-sellers__add-to-cart">В корзину</button>
+                                <b class="best-sellers__price">355₽</b>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="best-sellers__book">
+                    <div class="best-sellers__details">
+                        <img src="images/book-3.jpg" alt="Книга жало белого города" class="best-sellers__image">
+                        <div class="best-sellers__content">
+                            <h4 class="best-sellers-book__title">Каштановый человечек</h4>
+                            <a href="#" class="best-sellers__author">Сорен Свейструп</a>
+                            <div class="best-sellers__rating-container">
+                                <svg class="best-sellers__rating-icon" viewBox="0 0 14 13" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z"
+                                          fill="#FFF500"/>
+                                </svg>
+                                <p class="best-sellers__rating">4.9</p>
+                            </div>
+                            <div class="best-sellers__controls">
+                                <button class="best-sellers__add-to-cart">В корзину</button>
+                                <b class="best-sellers__price">575₽</b>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="best-sellers__book">
+                    <div class="best-sellers__details">
+                        <img src="images/book-2.jpg" alt="Книга жало белого города" class="best-sellers__image">
+                        <div class="best-sellers__content">
+                            <h4 class="best-sellers-book__title">Цветы для Элджернона</h4>
+                            <a href="#" class="best-sellers__author">Киз Даниэл</a>
+                            <div class="best-sellers__rating-container">
+                                <svg class="best-sellers__rating-icon" viewBox="0 0 14 13" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z"
+                                          fill="#FFF500"/>
+                                </svg>
+                                <p class="best-sellers__rating">4.9</p>
+                            </div>
+                            <div class="best-sellers__controls">
+                                <button class="best-sellers__add-to-cart">В корзину</button>
+                                <b class="best-sellers__price">399₽</b>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="best-sellers__book">
+                    <div class="best-sellers__details">
+                        <img src="images/book-4.jpg" alt="Книга жало белого города" class="best-sellers__image">
+                        <div class="best-sellers__content">
+                            <h4 class="best-sellers-book__title">Лягушка, слон и брокколи</h4>
+                            <a href="#" class="best-sellers__author">Алексей Марков</a>
+                            <div class="best-sellers__rating-container">
+                                <svg class="best-sellers__rating-icon" viewBox="0 0 14 13" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z"
+                                          fill="#FFF500"/>
+                                </svg>
+                                <p class="best-sellers__rating">4.9</p>
+                            </div>
+                            <div class="best-sellers__controls">
+                                <button class="best-sellers__add-to-cart">В корзину</button>
+                                <b class="best-sellers__price">575₽</b>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <address class="footer__address">
+        <h5 class="footer__title">Разработчики:</h5>
+        <ul class="footer__list">
+            <li class="footer__list-item">Давыдова Карина</li>
+            <li class="footer__list-item">Сафонова Аня</li>
+            <li class="footer__list-item">Шабалина Катя</li>
+        </ul>
+    </address>
+</footer>
+<script src="scripts/script.js"></script>
+</body>
+</html>

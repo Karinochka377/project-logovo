@@ -1,0 +1,297 @@
+/*Картинка, кнопка, текст*/
+.intro {
+    width: 100%;
+    height: 267px;
+    background-color: #FAE2D4;
+    margin-bottom: 52px;
+}
+
+.intro__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px 0 85px;
+}
+
+.intro__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro__title,
+.intro__button {
+    font-family: "Source Serif 4", Arial, sans-serif;
+}
+
+.intro__title {
+    margin: 42px 0 25px 0;
+    font-size: 33px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.intro__button {
+    width: 140px;
+    height: 40px;
+    background-color: #CE5610;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/*Популярное*/
+.popular {
+    margin: 0 100px 105px 100px;
+}
+
+.popular__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.popular__title {
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+    font-family: "Source Serif 4", Arial, sans-serif;
+}
+
+.popular__view-all {
+    display: flex;
+    color: #AB470E;
+}
+
+.popular__view-text {
+    margin-right: 5px;
+}
+
+/*Книги*/
+.popular__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.book {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 640px;
+    height: 178px;
+    box-shadow: 0 0 15px rgba(31, 26, 45, 0.22);
+    border-radius: 5px;
+    margin-bottom: 25px;
+    user-select: none;
+}
+
+.book__info {
+    width: 100%;
+    margin-right: 40px;
+}
+
+.book__icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    transform: translate(38rem, 1rem);
+}
+
+.book__description {
+    font-size: 14px;
+    font-family: "Times New Roman", Arial, sans-serif;
+}
+
+.book__more-link {
+    color: #0A37AB;
+}
+
+.book__image {
+    width: 86px;
+    height: 136px;
+    border-radius: 5px;
+}
+
+.book__details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 9px;
+}
+
+.book__content {
+    margin: 0 30px 0 9px;
+}
+
+.book__title {
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-family: Philosopher, Arial, sans-serif;
+    width: 103%;
+}
+
+.book__author {
+    display: block;
+    font-size: 14px;
+    color: #8D8D8D;
+    margin-bottom: 8px;
+    width: 103%;
+}
+
+.book__rating-container {
+    display: flex;
+    margin-bottom: 31px;
+}
+
+.book__rating-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.book__rating {
+    font-size: 14px;
+    color: #AB470E;
+}
+
+.book__controls {
+    display: flex;
+    align-items: center;
+}
+
+.book__add-to-cart {
+    width: 98px;
+    height: 35px;
+    background-color: #CE5610;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Philosopher, Arial, sans-serif;
+    margin-right: 25px;
+}
+
+.book__price {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Calibri, Arial, sans-serif;
+}
+
+/*Хиты продаж*/
+.best-sellers__container {
+    background-color: #FFC8A8;
+    height: 339px;
+    margin-bottom: 120px;
+}
+
+.best-sellers {
+    margin: 0 0 105px 100px;
+}
+
+.best-sellers__title {
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+    padding: 42px 0 20px 0;
+    font-family: "Source Serif 4", Arial, sans-serif;
+}
+
+/*Хиты продаж - Карточки*/
+.best-sellers__list {
+    display: flex;
+}
+
+.best-sellers__book {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 295px;
+    height: 178px;
+    border-radius: 5px;
+    margin-right: 70px;
+    background-color: #ffffff;
+}
+
+.best-sellers__image {
+    width: 86px;
+    height: 136px;
+    border-radius: 5px;
+}
+
+.best-sellers__details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.best-sellers__content {
+    width: 100%;
+    padding-left: 9px;
+}
+
+.best-sellers-book__title {
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-family: Philosopher, Arial, sans-serif;
+}
+
+.best-sellers__author {
+    display: block;
+    font-size: 14px;
+    color: #8D8D8D;
+    margin-bottom: 8px;
+}
+
+.best-sellers__rating-container {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.best-sellers__rating-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.best-sellers__rating {
+    font-size: 14px;
+    color: #AB470E;
+}
+
+.best-sellers__controls {
+    display: flex;
+    align-items: center;
+}
+
+.best-sellers__add-to-cart {
+    width: 98px;
+    height: 35px;
+    background-color: #CE5610;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Philosopher, Arial, sans-serif;
+    margin-right: 25px;
+}
+
+.best-sellers__price {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Calibri, Arial, sans-serif;
+}
